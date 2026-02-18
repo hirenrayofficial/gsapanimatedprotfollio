@@ -1,0 +1,24 @@
+.stackContainer {
+  width: 100%;
+  background-color: white;
+}
+
+.cardWrapper {
+  height: 100vh; // Har section full screen hona chahiye
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  // will-change: transform;
+}
+
+.card {
+  width: 90%;
+  height: 80vh;
+  background: #1a1a1a;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  // box-shadow: 0 -10px 30px rgba(0,0,0,0.3);
+  // Important: transition smooth rakhne ke liye transitions GSAP handle karega, CSS nahi.
+}

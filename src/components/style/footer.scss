@@ -1,0 +1,17 @@
+
+.footer-container{
+    position: fixed;
+    display: flex;
+    // justify-content: start;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    padding-top: 50px;
+    padding: 15px;
+    z-index: 99;
+    // color: red;
+    bottom: 0;
+    width: 100%;
+    p{
+        cursor: pointer;
+    }
+}
