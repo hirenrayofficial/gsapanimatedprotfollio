@@ -12,7 +12,9 @@ const ProfessionalPreloader = ({ children }) => {
   const containerRef = useRef(null);
   const words = ["H", "I", "R", "E", "N"];
   const [isReady, setIsReady] = useState(false);
-  const [setIsComplete] = useState(false);
+  
+  // FIXED: Correct array destructuring [value, setter]
+  const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
     const chars = containerRef.current.querySelectorAll(".char");
@@ -135,7 +137,6 @@ const ProfessionalPreloader = ({ children }) => {
       
       {/* Main Content - Shows immediately, no opacity tricks */}
       <main className="main-content">
-        
         {children}
       </main>
     </>
