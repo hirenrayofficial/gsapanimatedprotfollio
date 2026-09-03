@@ -34,7 +34,7 @@ export default function HoraizentalContent() {
       project_description:
         "The morder selling app with 0 backend setup only use firebase ",
       project_image: "/nodeporxy.png",
-      project_link: "",
+      project_link: "/",
       project_bg_image: "/cardimg/aurora-gradient-1788443448593.webp",
     },
   ];
