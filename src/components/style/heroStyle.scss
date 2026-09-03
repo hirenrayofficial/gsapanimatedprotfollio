@@ -1,156 +1,150 @@
 html,
 body {
-    padding-top: 100vh;
-
-    background:
-        linear-gradient(rgba(255, 255, 255, 0.856), rgba(255, 255, 255, 0.856)),
-        url("../../../public/cardboard-texture.jpg");
-    background-size: cover;
-    background-position: center;
+  padding-top: 10vh;
+  background: white;
+  background-size: cover;
+  background-position: center;
 }
 
 .landing-container-main {
-    padding-top: 100px;
-    padding-right: 15px;
-    padding-left: 15px;
-    height: fit-content;
+  padding-top: 100px;
+  padding-right: 15px;
+  padding-left: 15px;
+  height: fit-content;
 
-    .landing-component {
-        display: flex;
-        flex-direction: row;
+  .landing-component {
+    display: flex;
+    flex-direction: row;
+  }
+
+  // display: none;
+  .who-i-am {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    #Own {
+      font-size: 24px;
     }
 
-    // display: none;
-    .who-i-am {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+    .i-desk {
+      display: flex;
+      flex-direction: column;
+      padding: 8px 16px;
+      color: gray;
 
-        #Own {
-            font-size: 24px;
+      span {
+        font-size: 14px;
+        font-family: "Courier New", Courier, monospace;
+      }
+    }
+  }
+
+  .what-i-do {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0px 24px;
+
+    #Own {
+      font-size: 24px;
+    }
+
+    .i-desk {
+      display: flex;
+      flex-direction: column;
+      padding: 8px 16px;
+      color: gray;
+
+      span {
+        font-size: 14px;
+        font-family: "Courier New", Courier, monospace;
+        max-width: 500px;
+      }
+      .l-arroe {
+        img {
+          rotate: 280deg;
+          left: 10px;
         }
+      }
+    }
+  }
 
-        .i-desk {
-            display: flex;
-            flex-direction: column;
-            padding: 8px 16px;
-            color: gray;
+  .center-hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-            span {
-                font-size: 14px;
-                font-family: 'Courier New', Courier, monospace;
-            }
-        }
+    .job-tag {
+      max-width: 500px;
+      font-size: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    .what-i-do {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        padding: 0px 24px;
+    .owener-img {
+      max-width: 300px;
 
-        #Own {
-            font-size: 24px;
-        }
-
-        .i-desk {
-            display: flex;
-            flex-direction: column;
-            padding: 8px 16px;
-            color: gray;
-
-            span {
-                font-size: 14px;
-                font-family: 'Courier New', Courier, monospace;
-                max-width: 500px;
-            }
-            .l-arroe{
-                img{
-                    rotate: 280deg;
-                    left: 10px;
-                }
-            }
-        }
+      img {
+        width: 100%;
+        border-radius: 50px;
+      }
     }
+  }
 
-    .center-hero {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+  .bottom-hero-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    padding: 2%;
+  }
+  .optional {
+    padding: 1.5%;
+  }
 
-        .job-tag {
-            max-width: 500px;
-            font-size: 32px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .owener-img {
-            max-width: 300px;
-
-            img {
-                width: 100%;
-                border-radius: 50px;
-            }
-        }
-    }
-
-    .bottom-hero-content {
-        display: flex;
-        flex-direction: column;
-        font-size: 32px;
-        padding: 2%;
-    }
-    .optional{
-        padding: 1.5%;
-    }
-
-    #bottom-span-a {
-
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight: 500px;
-    }
-
+  #bottom-span-a {
+    font-family:
+      "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 500px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
+  .landing-container-main {
+    // padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 
-    .landing-container-main {
-        // padding-top: 100px;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-
-        .landing-component {
-            display: flex;
-            flex-direction: column;
-            .job-tag img{
-                display: none;
-            }
-            .l-arroe img{
-                display: none;
-            }
-        }
+    .landing-component {
+      display: flex;
+      flex-direction: column;
+      .job-tag img {
+        display: none;
+      }
+      .l-arroe img {
+        display: none;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .landing-container-main {
+    // padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 
-    .landing-container-main {
-        // padding-top: 100px;
-        display: flex;
-        flex-direction: column;
-        gap: 80px;
-
-        .landing-component {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .center-hero {
-            display: flex;
-            flex-direction: column;
-        }
+    .landing-component {
+      display: flex;
+      flex-direction: column;
     }
+
+    .center-hero {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

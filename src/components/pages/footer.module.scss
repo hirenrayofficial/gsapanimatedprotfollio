@@ -1,0 +1,125 @@
+.footerWrapper {
+  position: relative;
+  width: 100%;
+  /* High z-index ensures the footer pins cleanly below scrollable content */
+  z-index: 1;
+}
+
+.footer {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 40px 40px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 80vh;
+}
+
+.topSection {
+  margin-bottom: 60px;
+
+  .subheading {
+    font-size: 1.2rem;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .bigTitle {
+    font-size: clamp(3rem, 10vw, 8rem);
+    font-weight: 800;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #00d9ff;
+      
+      .arrow {
+        transform: translateX(20px);
+      }
+    }
+
+    .arrow {
+      display: inline-block;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+  }
+}
+
+.gridSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  .col {
+    h4 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      color: #666666;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 12px;
+
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 1.1rem;
+          transition: opacity 0.2s ease;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    p {
+      color: #aaaaaa;
+      margin: 6px 0;
+      font-size: 1rem;
+    }
+  }
+}
+
+.bottomBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.85rem;
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px 20px;
+  }
+  
+  .gridSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,18 +1,23 @@
-import React from 'react'
-import Landing from './Landing'
-import Project from './pages/Project'
-import PageSlider from './commonUsePage/SliderPages'
-import ScrollingProject from './commonUsePage/ScrollingProject'
-import Cursor from './commonUsePage/Cursor'
+import React from "react";
+import Landing from "./Landing";
+
+import PageSlider from "./commonUsePage/SliderPages";
+import Cursor from "./commonUsePage/Cursor";
+// import MaskComponent from './projects/Blackmask'
+import HoraizentalContent from "./projects/HoraizentalContent";
+import ModernFooter from "./pages/Footer";
+import TimelineScrolling from "./projects/TimelineScrolling";
+import Project from "./projects/Project";
 
 export default function Hero() {
   return (
     <div>
-      <Cursor/>
+      <Cursor />
       <Landing />
-      <Project />
-      {/* <ScrollingProject/> */}
-      {/* <PageSlider /> */}
+      <Project/>
+      <TimelineScrolling/>
+      <PageSlider />
+
     </div>
-  )
+  );
 }

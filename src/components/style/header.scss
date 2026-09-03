@@ -38,6 +38,11 @@
             }
         } 
     }
+    @media screen and (max-width: 768px) {
+        .center-header{
+            display: none;
+        }
+    }
     .right-header{
         display: flex;
         flex-direction: row;
