@@ -1,16 +1,10 @@
 import React, { useRef } from "react";
 import "../style/header.scss";
 
-import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import { motion,} from "framer-motion";
 
 export default function Header() {
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: false, margin: "-100px" });
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start center", "end center"],
-  });
   return (
     <div ref={containerRef} className="header-container">
       <motion.div

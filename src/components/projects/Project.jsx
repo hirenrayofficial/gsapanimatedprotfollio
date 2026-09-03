@@ -91,7 +91,7 @@ export default function Project() {
             <h1>Hii Main Hiren</h1>
             <p>Welcome to my creative universe</p>
             <button className="cta-btn">Explore Projects</button>
-            <img src="/hirenray-removebg-preview.png"></img>
+            <img src="/hirenray-removebg-preview.png" alt="Background"></img>
           </div>
         </div>
 

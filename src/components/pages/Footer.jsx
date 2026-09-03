@@ -105,7 +105,7 @@ export default function ModernFooter() {
               <ul>
                 {["Twitter / X", "LinkedIn", "GitHub", "Instagram"].map((item, i) => (
                   <li key={item} ref={(el) => (linksRef.current[i + 4] = el)}>
-                    <a href="#" target="_blank" rel="noreferrer">{item}</a>
+                    <a href="/" target="_blank" rel="noreferrer">{item}</a>
                   </li>
                 ))}
               </ul>

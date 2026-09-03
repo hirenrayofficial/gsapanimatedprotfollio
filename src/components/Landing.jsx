@@ -1,42 +1,12 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, {  useRef } from "react";
 import "./style/heroStyle.scss";
 
-import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import { motion,} from "framer-motion";
 
 export default function Landing() {
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef, { once: false, margin: "-100px" });
 
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start center", "end center"],
-  });
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.1,
-      },
-    },
-  };
-
-  const cardVariants = {
-    hidden: { y: 60, opacity: 0, rotate: -5 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      rotate: 0,
-      transition: {
-        type: "spring",
-        stiffness: 100,
-        damping: 20,
-        duration: 0.6,
-      },
-    },
-  };
 
   return (
     <div ref={containerRef} className="landing-container-main">

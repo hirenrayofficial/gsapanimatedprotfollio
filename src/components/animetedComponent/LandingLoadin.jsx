@@ -12,7 +12,7 @@ const ProfessionalPreloader = ({ children }) => {
   const containerRef = useRef(null);
   const words = ["H", "I", "R", "E", "N"];
   const [isReady, setIsReady] = useState(false);
-  const [isComplete, setIsComplete] = useState(false);
+  const [setIsComplete] = useState(false);
 
   useEffect(() => {
     const chars = containerRef.current.querySelectorAll(".char");

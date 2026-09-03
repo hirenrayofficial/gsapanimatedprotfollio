@@ -3,13 +3,12 @@ import { Outlet } from 'react-router-dom'
 import Landinloader from '../animetedComponent/LandingLoadin'
 import Header from '../pages/Header'
 import '../style/Layout.scss'
-import Landing from '../Landing'
 import Footer from '../pages/Footer'
 
 export default function Layout() {
     return (
         <div>
-            {/* <Landinloader> */}
+            <Landinloader>
                 <header>
                     <Header />
                 </header>
@@ -19,7 +18,7 @@ export default function Layout() {
                 <footer>
                     <Footer />
                 </footer>
-            {/* </Landinloader> */}
+            </Landinloader>
         </div>
     )
 }

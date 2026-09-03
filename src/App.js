@@ -1,14 +1,12 @@
 import React from 'react'
-import Landin from './components/Landing'
+
 import Layout from './components/layout/Layout'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
-import Landing from './components/Landing'
 import Hero from './components/Hero'
 
-export default function () {
+export default function App () {
   
-  
-  const homelayout =()=> <Layout/>
+
 
   const router = createBrowserRouter([
     {
