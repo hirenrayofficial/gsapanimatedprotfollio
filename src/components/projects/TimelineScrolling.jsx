@@ -15,7 +15,7 @@ export default function HoraizentalContent() {
       project_title: "Moonlight Machinery Paper plate making Machine",
       project_description:
         "Moonlight Machinery is a leading manufacturer of paper plate making machines. We offer a wide range of machines that are designed to meet the needs of our customers. Our machines are made from high-quality materials and are built to last.",
-      project_image: "/nodeporxy.png",
+      project_image: "/moon.png",
       project_link: "https://www.moonlightmachinery.com/",
       project_bg_image: "/cardimg/aurora-gradient-1788443397099.webp",
     },
