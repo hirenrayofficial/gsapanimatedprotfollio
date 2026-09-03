@@ -68,3 +68,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## SEO Setup
+
+ - **Updated file:** See the head metadata in [public/index.html](public/index.html).
+ - **Placeholders:** Replace geo tags, `twitter`/`linkedin` URLs, and `og-image.png` in [public/index.html](public/index.html) with your real values.
+ - **Sitemap:** A basic sitemap was added at [public/sitemap.xml](public/sitemap.xml). Update it with more routes as needed.
+ - **Robots:** [public/robots.txt](public/robots.txt) already allows indexing; confirm it meets your needs.
+
+Quick commands (optional):
+
+```bash
+# Build production bundle
+npm run build
+
+# Test the built site locally (serve is a simple static server)
+npx serve -s build -l 3000
+
+# If you prefer to generate a fuller sitemap, run a crawler tool against your deployed site
+# Example (one-off): npx sitemap-generator-cli 'https://hirenray.rest' -o public/sitemap.xml
+```
+
+After updating the placeholders, re-run `npm run build` and deploy the `build/` output to your host.

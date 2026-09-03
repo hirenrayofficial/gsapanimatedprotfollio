@@ -5,10 +5,15 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+
+    <!-- Primary SEO -->
+    <title>Hiren Ray — Portfolio</title>
+    <meta name="description" content="Portfolio of Hiren Ray — designer & developer. Showcasing projects, case studies and contact details." />
+    <meta name="keywords" content="Hiren Ray, portfolio, web developer, designer, frontend, GSAP, React" />
+    <link rel="canonical" href="https://hirenray.rest/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Hiren Ray" />
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -24,7 +29,63 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+
+    <!-- Locale / Hreflang -->
+    <link rel="alternate" href="https://hirenray.rest/" hreflang="en" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Hiren Ray — Portfolio" />
+    <meta property="og:description" content="Portfolio of Hiren Ray — designer & developer. Showcasing projects, case studies and contact details." />
+    <meta property="og:url" content="https://hirenray.rest/" />
+    <meta property="og:site_name" content="HirenRay.rest" />
+    <meta property="og:image" content="%PUBLIC_URL%/cardimg/og-image.png" />
+    <meta property="og:image:alt" content="Hiren Ray portfolio preview" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@hirenray" />
+    <meta name="twitter:creator" content="@hirenray" />
+    <meta name="twitter:title" content="Hiren Ray — Portfolio" />
+    <meta name="twitter:description" content="Portfolio of Hiren Ray — designer & developer." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/cardimg/og-image.png" />
+
+    <!-- Geo / Local SEO (update coordinates/address below) -->
+    <!-- Replace the content values with your actual location data -->
+    <meta name="geo.region" content="" />
+    <meta name="geo.placename" content="" />
+    <meta name="geo.position" content="" />
+    <meta name="ICBM" content="" />
+
+    <!-- Structured Data (JSON-LD) for WebSite + Person -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://hirenray.rest/#website",
+            "url": "https://hirenray.rest/",
+            "name": "Hiren Ray — Portfolio",
+            "description": "Portfolio of Hiren Ray — designer & developer",
+            "publisher": {
+              "@id": "https://hirenray.rest/#person"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://hirenray.rest/#person",
+            "name": "Hiren Ray",
+            "url": "https://hirenray.rest/",
+            "sameAs": [
+              "https://twitter.com/hirenray",
+              "https://www.linkedin.com/in/hirenray"
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
