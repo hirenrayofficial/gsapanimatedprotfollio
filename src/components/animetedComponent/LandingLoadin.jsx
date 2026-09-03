@@ -114,6 +114,11 @@ const ProfessionalPreloader = ({ children }) => {
     });
 
   }, [isReady]);
+  {!isComplete && (
+  <div className="loader-container" ref={loaderRef}>
+    Loadding...
+  </div>
+)}
 
   return (
     <>
