@@ -1,0 +1,141 @@
+:root {
+  --bg: #ffffff;
+  --text-main: #111111;
+  --text-muted: #737373;
+  --border: #e5e5e5;
+  --accent: #000000;
+}
+
+.site-footer {
+  width: 100%;
+  background-color: var(--bg);
+  border-top: 1px solid var(--border);
+  margin-top: 6rem;
+
+  .footer-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 2rem 1.5rem;
+  }
+
+  /* Upper Footer Section */
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--border);
+
+    @media (min-width: 640px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  /* Branding Column */
+  .footer-brand {
+    max-width: 320px;
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+
+      .logo-dot {
+        width: 8px;
+        height: 8px;
+        background-color: var(--accent);
+        border-radius: 50%;
+      }
+
+      .logo-text {
+        font-size: 1.125rem;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+      }
+    }
+
+    .footer-tagline {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+  }
+
+  /* Navigation Columns */
+  .footer-nav {
+    display: flex;
+    gap: 4rem;
+
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+
+      .col-title {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--text-main);
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+
+      a {
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.15s ease;
+
+        &:hover {
+          color: var(--text-main);
+        }
+      }
+    }
+  }
+
+  /* Lower Copyright & Legal Section */
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+
+    @media (min-width: 640px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .copyright {
+      margin: 0;
+    }
+
+    .legal-links {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      a {
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.15s ease;
+
+        &:hover {
+          color: var(--text-main);
+        }
+      }
+
+      .dot {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}

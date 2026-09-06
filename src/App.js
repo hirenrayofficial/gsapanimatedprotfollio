@@ -1,19 +1,32 @@
 import React from 'react'
 
 import Layout from './components/layout/Layout'
-import { createBrowserRouter,RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Hero from './components/Hero'
+import Blog from './pages/blog/Blog'
+import BlogLayout from './blog/component/BlogLayout'
+import CreateBlog from './blog/component/editor/CreateBlog'
+import BlogPostReader from './blog/component/BlogPostReader'
 
-export default function App () {
-  
+export default function App() {
+
 
 
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Layout/>,
+      element: <Layout />,
       children: [
-        {index: true, element: <Hero/>}
+        { index: true, element: <Hero /> }
+      ]
+    },
+    {
+      path: "/blog",
+      element: <BlogLayout />,
+      children: [
+        { index: true, element: <Blog /> },
+        { path: "create", element: <CreateBlog /> },
+        { path: ":slug", element: <BlogPostReader /> }
       ]
     }
   ])
@@ -24,7 +37,7 @@ export default function App () {
 
   return (
     <div>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </div>
   )
 }
