@@ -26,10 +26,14 @@ export default function App() {
       element: <BlogLayout />,
       children: [
         { index: true, element: <Blog /> },
-        { path: "create", element: <CreateBlog /> },
-        { path: "aimaker", element: <AIblogMaker /> },
-        { path: ":slug", element: <BlogPostReader /> },
-
+        {
+          path: "create",
+          children: [
+            { index: true, element: <CreateBlog /> },
+            { path: "ai", element: <AIblogMaker /> }
+          ]
+        },
+        { path: ":slug", element: <BlogPostReader /> }
       ]
     }
   ])
