@@ -3,7 +3,7 @@ import path from 'path';
 
 async function generateSitemap() {
   const baseUrl = 'https://hirenray.rest';
-  const api = process.env.REACT_APP_API_END_POINT
+  const api = "https://api.hrblog.hirenray.rest"
 
   // Fetch your blog posts
   const response = await fetch(api + '/api/blogs');
