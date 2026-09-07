@@ -3,7 +3,7 @@ import path from 'path';
 
 async function generateSitemap() {
   const baseUrl = 'https://hirenray.rest';
-  const api = "https://api.hrblog.hirenray.rest"
+  const api = "https://api.hrblog.hirenray.rest";
 
   // Fetch your blog posts
   const response = await fetch(api + '/api/blogs');
@@ -22,32 +22,32 @@ async function generateSitemap() {
     .join('');
 
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemapindex.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>${baseUrl}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-    <url>
+  <url>
     <loc>${baseUrl}/blog</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-    <url>
+  <url>
     <loc>${baseUrl}/about</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-    <url>
+  <url>
     <loc>${baseUrl}/contact</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-    <url>
+  <url>
     <loc>${baseUrl}/privacy</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>daily</changefreq>
