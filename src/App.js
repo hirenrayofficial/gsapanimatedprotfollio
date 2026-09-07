@@ -28,7 +28,7 @@ export default function App() {
         { index: true, element: <Blog /> },
         { path: "create", element: <CreateBlog /> },
         { path: ":slug", element: <BlogPostReader /> },
-        {path: "ai",element:<AIblogMaker/>}
+        {path: "aimaker",element:<AIblogMaker/>}
       ]
     }
   ])

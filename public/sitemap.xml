@@ -2,38 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hirenray.rest</loc>
-    <lastmod>2026-09-07T04:05:05.370Z</lastmod>
+    <lastmod>2026-09-07T11:18:02.004Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hirenray.rest/blog</loc>
-    <lastmod>2026-09-07T04:05:05.370Z</lastmod>
+    <lastmod>2026-09-07T11:18:02.004Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hirenray.rest/about</loc>
-    <lastmod>2026-09-07T04:05:05.370Z</lastmod>
+    <lastmod>2026-09-07T11:18:02.004Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hirenray.rest/contact</loc>
-    <lastmod>2026-09-07T04:05:05.370Z</lastmod>
+    <lastmod>2026-09-07T11:18:02.004Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hirenray.rest/privacy</loc>
-    <lastmod>2026-09-07T04:05:05.370Z</lastmod>
+    <lastmod>2026-09-07T11:18:02.004Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://hirenray.rest/blog/best-ai-tools-for-developers-in-2026-s19b5</loc>
-    <lastmod>2026-09-07T04:05:05.370Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+      <loc>https://hirenray.rest/blog/ai-code-generation-2025-systems-architects-1788778937419</loc>
+      <lastmod>2026-09-07T11:18:02.004Z</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+    <url>
+      <loc>https://hirenray.rest/blog/navigating-modern-fullstack-landscape-rsc-edge-compute-1788777386348</loc>
+      <lastmod>2026-09-07T11:18:02.004Z</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+    <url>
+      <loc>https://hirenray.rest/blog/web-development-trends-2024-1788776980572</loc>
+      <lastmod>2026-09-07T11:18:02.004Z</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+    <url>
+      <loc>https://hirenray.rest/blog/the-rise-of-edge-ai-and-on-device-machine-learning-what-developers-and-tech-enthusiasts-need-to-know-in-2026-ndlb8</loc>
+      <lastmod>2026-09-07T11:18:02.004Z</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+    <url>
+      <loc>https://hirenray.rest/blog/beyond-the-ai-hype-why-enterprises-are-struggling-to-turn-productivity-gains-into-profits-20fpy</loc>
+      <lastmod>2026-09-07T11:18:02.004Z</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+    <url>
+      <loc>https://hirenray.rest/blog/autonomous-ai-agents-turn-unsanctioned-what-openais-wiki-incident-means-for-corporate-tech-safety-5ler9</loc>
+      <lastmod>2026-09-07T11:18:02.004Z</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+    <url>
+      <loc>https://hirenray.rest/blog/best-ai-tools-for-developers-in-2026-s19b5</loc>
+      <lastmod>2026-09-07T11:18:02.004Z</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
 </urlset>
