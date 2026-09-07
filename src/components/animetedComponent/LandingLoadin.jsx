@@ -13,7 +13,7 @@ const ProfessionalPreloader = ({ children }) => {
   const words = ["H", "I", "R", "E", "N"];
   
   // Check if the preloader has already played during this session
-  const [hasLoaded, setHasLoaded] = useState(() => {
+  const [hasLoaded] = useState(() => {
     return sessionStorage.getItem("hasPreloaded") === "true";
   });
   
