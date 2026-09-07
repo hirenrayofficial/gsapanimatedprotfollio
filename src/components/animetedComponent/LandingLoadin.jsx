@@ -11,14 +11,24 @@ const ProfessionalPreloader = ({ children }) => {
   const loaderRef = useRef(null);
   const containerRef = useRef(null);
   const words = ["H", "I", "R", "E", "N"];
-  const [isReady, setIsReady] = useState(false);
+  
+  // Check if the preloader has already played during this session
+  const [hasLoaded, setHasLoaded] = useState(() => {
+    return sessionStorage.getItem("hasPreloaded") === "true";
+  });
+  
+  const [isReady, setIsReady] = useState(hasLoaded);
 
   useEffect(() => {
+    // Skip animation entirely if already shown before
+    if (hasLoaded) return;
+
     const chars = containerRef.current.querySelectorAll(".char");
     const tl = gsap.timeline({
       onComplete: () => {
         setTimeout(() => {
           setIsReady(true);
+          sessionStorage.setItem("hasPreloaded", "true"); // Save state so navigation links don't trigger it again
         }, 500);
       }
     });
@@ -81,11 +91,11 @@ const ProfessionalPreloader = ({ children }) => {
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     };
-  }, []);
+  }, [hasLoaded]);
 
   // --- SLIDE UP ANIMATION ---
   useEffect(() => {
-    if (!isReady) return;
+    if (!isReady || hasLoaded) return;
 
     document.body.style.overflow = '';
     document.body.style.position = '';
@@ -101,7 +111,12 @@ const ProfessionalPreloader = ({ children }) => {
         }
       }
     });
-  }, [isReady]);
+  }, [isReady, hasLoaded]);
+
+  // If already loaded on previous route visits, skip rendering the loader markup
+  if (hasLoaded) {
+    return <main className="main-content">{children}</main>;
+  }
 
   return (
     <>

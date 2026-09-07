@@ -12,9 +12,21 @@ export default function Header() {
         </a>
 
         <nav className="header-nav">
-          <a href="#articles" className="nav-link active">Articles</a>
-          <a href="#about" className="nav-link">About</a>
-          {/* <a href="#newsletter" className="nav-link">Newsletter</a> */}
+          <a href="/blog" className="nav-link active">
+            Blog
+          </a>
+          <a href="/about" className="nav-link">
+            About
+          </a>
+          <a href="/contact" className="nav-link">
+            Contact
+          </a>
+          <a href="/privacy" className="nav-link">
+            Privacy
+          </a>
+          <a href="/terms" className="nav-link">
+            Terms
+          </a>
         </nav>
 
         <div className="header-actions">

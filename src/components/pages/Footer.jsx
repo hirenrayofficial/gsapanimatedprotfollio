@@ -92,9 +92,9 @@ export default function ModernFooter() {
             <div className={styles.col}>
               <h4>Navigation</h4>
               <ul>
-                {["Home", "Work", "About", "Contact"].map((item, i) => (
+                {["About", "Contact","Privacy","Terms"].map((item, i) => (
                   <li key={item} ref={(el) => (linksRef.current[i] = el)}>
-                    <a href={`#${item.toLowerCase()}`}>{item}</a>
+                    <a href={`/${item.toLowerCase()}`}>{item}</a>
                   </li>
                 ))}
               </ul>
@@ -103,9 +103,9 @@ export default function ModernFooter() {
             <div className={styles.col}>
               <h4>Socials</h4>
               <ul>
-                {["Twitter / X", "LinkedIn", "GitHub", "Instagram"].map((item, i) => (
+                {[{name:"LinkedIn",link:"https://www.linkedin.com/in/hiren-ray-b34215346/"},{name:"GitHub",link: "https://github.com/hirenrayofficial/"}, {name:"Instagram",link:"https://www.instagram.com/hirenray.rest"}].map((item, i) => (
                   <li key={item} ref={(el) => (linksRef.current[i + 4] = el)}>
-                    <a href="/" target="_blank" rel="noreferrer">{item}</a>
+                    <a href={item.link} target="_blank" rel="noreferrer">{item.name}</a>
                   </li>
                 ))}
               </ul>
@@ -113,14 +113,14 @@ export default function ModernFooter() {
 
             <div className={styles.col}>
               <h4>Location</h4>
-              <p>San Francisco, CA</p>
-              <p>12:00 PM PST</p>
+              <p>Telipara,Alipurduar West Bengal, India</p>
+              <p></p>
             </div>
           </div>
 
           {/* Bottom Bar */}
           <div className={styles.bottomBar}>
-            <span>© {new Date().getFullYear()} Modern Studio. All Rights Reserved.</span>
+            <span>© {new Date().getFullYear()} Hiren Ray. All Rights Reserved.</span>
             <span>Back to Top ↑</span>
           </div>
         </div>
