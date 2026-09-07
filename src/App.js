@@ -27,8 +27,9 @@ export default function App() {
       children: [
         { index: true, element: <Blog /> },
         { path: "create", element: <CreateBlog /> },
+        { path: "aimaker", element: <AIblogMaker /> },
         { path: ":slug", element: <BlogPostReader /> },
-        {path: "aimaker",element:<AIblogMaker/>}
+
       ]
     }
   ])
