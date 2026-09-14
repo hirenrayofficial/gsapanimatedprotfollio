@@ -47,7 +47,7 @@ export default function Landing() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <img src="https://ibb.co/Vcy2BkCG" alt="" />
+            <img src="https://res.cloudinary.com/dihfmeuqt/image/upload/v1789410326/891200f1-740a-4e96-8796-c30cc5a9519a_pakh91.jpg" alt="" />
           </motion.div>
         </div>
         <motion.div
