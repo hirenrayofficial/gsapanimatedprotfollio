@@ -18,7 +18,7 @@ export default function Landing() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4 }}
           >
-            Hiren Ray
+            Rohit Roy
           </motion.span>
           <motion.div
             className="i-desk"
@@ -47,7 +47,7 @@ export default function Landing() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <img src="/hirenray.png" alt="" />
+            <img src="https://ibb.co/Vcy2BkCG" alt="" />
           </motion.div>
         </div>
         <motion.div
