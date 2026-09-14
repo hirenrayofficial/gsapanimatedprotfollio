@@ -13,7 +13,7 @@ export default function Header() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4 }}
       >
-        <span>RAY</span>
+        <span>Rohit Roy</span>
       </motion.div>
       <motion.div
         className="center-header"
