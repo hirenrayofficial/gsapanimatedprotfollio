@@ -14,7 +14,7 @@ export default function Header() {
         transition={{ duration: 0.4 }}
         onClick={(e) => (window.location.href = "/")}
       >
-        <span>Rohit Roy</span>
+        <span>Hiren Ray</span>
       </motion.div>
       <motion.div
         className="center-header"
